@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+
+.nav {
+  @apply h-14 w-full px-2 lg:px-20 xl:px-48 bg-gradient-to-r from-secondary to-nav fixed left-0 top-0;
+}
+
+.btn {
+  @apply rounded-sm shadow-sm text-sm p-1;
+}
+
+.btn-primary {
+  @apply bg-primary;
+}
+.btn-success {
+  @apply bg-success;
+}
+
+.content {
+  @apply h-full flex items-center hover:bg-dark-hover cursor-pointer px-1;
+}
