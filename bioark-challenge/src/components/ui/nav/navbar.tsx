@@ -3,6 +3,7 @@ import { Avatar } from "../../../assets/icons/avatar/avatar";
 import { Notification } from "../../../assets/icons/general/Notification";
 import { LoginIcon } from "../../../assets/icons/login/LoginIcon";
 import { Logo } from "../../../assets/icons/brand/Logo";
+import { Center } from "../../center/center";
 
 export const Navbar = () => {
   return (
@@ -17,14 +18,12 @@ export const Navbar = () => {
       </div>
       <div className="flex gap-x-2 items-center h-full">
         <div className="content ">
-          <button className="btn btn-success ">مرکز پشتیبانی</button>
-        </div>
-        <div className="content ">
           <button className="btn btn-primary ">مرکز پشتیبانی</button>
         </div>
         <div className="content ">
           <button className="btn btn-primary ">مرکز پشتیبانی</button>
         </div>
+        <Center />
         <span className="content">Fa</span>
         <div className="content">
           <Notification />
