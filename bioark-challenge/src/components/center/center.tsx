@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import translate from "../../assets/translate/translate.json";
 import { DUMMY_HOSPITAL, dummyData } from "./center.interface";
+import { useClickOutside } from "../../hooks/useClickOutside";
 export const Center = () => {
   const [isShow, setIsShow] = useState<boolean>(false);
   const [currentCenter, setCurrentCenter] = useState<dummyData>(
@@ -10,8 +11,11 @@ export const Center = () => {
     setCurrentCenter(item);
     setIsShow(false);
   };
+  const domNode = useClickOutside(() => {
+    setIsShow(false);
+  });
   return (
-    <div className="content relative">
+    <div className="content relative" ref={domNode}>
       <button
         className="btn btn-primary"
         onClick={() => setIsShow((pre) => !pre)}

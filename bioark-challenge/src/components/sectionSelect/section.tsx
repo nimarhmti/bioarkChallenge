@@ -1,34 +1,37 @@
 import React, { useState } from "react";
 import translate from "../../assets/translate/translate.json";
 import { DUMMY_SECTION, dummyData } from "./section.interface";
+import { useClickOutside } from "../../hooks/useClickOutside";
 export const Section = () => {
   const [isShow, setIsShow] = useState<boolean>(false);
-  const [currentCenter, setCurrentCenter] = useState<dummyData>(
+  const [currentSection, setCurrentSection] = useState<dummyData>(
     DUMMY_SECTION[0]
   );
   const setCenterHandler = (item: dummyData) => {
-    setCurrentCenter(item);
+    setCurrentSection(item);
     setIsShow(false);
   };
+  const domNode = useClickOutside(() => {
+    setIsShow(false);
+  });
   return (
-    <div className="content relative">
+    <div className="content relative" ref={domNode}>
       <button
-        className="btn btn-primary"
+        className="btn btn-primary w-40"
         onClick={() => setIsShow((pre) => !pre)}
       >
-        {translate.NAVBAR.CENTER} :{" "}
-        {currentCenter.label.substring(0, 9) + " ..."}
+        {translate.NAVBAR.SECTION} : {currentSection.label}
       </button>
       <ul className={isShow ? "dropDownList" : "hidden"}>
         {DUMMY_SECTION.map((item: dummyData) => (
           <li
             className={
-              item.id == currentCenter.id
+              item.id == currentSection.id
                 ? "dropDownItem bg-gray-200"
                 : "dropDownItem"
             }
             key={item.id}
-            onClick={() => setCenterHandler(item)}
+            onClick={() => setCurrentSection(item)}
           >
             {item.label}
           </li>

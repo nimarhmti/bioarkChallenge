@@ -1,10 +1,10 @@
-import { Avatar } from "../../../assets/icons/avatar/avatar";
 import { LoginIcon } from "../../../assets/icons/login/LoginIcon";
 import { Center } from "../../center/center";
 import { Section } from "../../sectionSelect/section";
 import translate from "../../../assets/translate/translate.json";
 import { LanSwitcher } from "../../switcher/lanSwitcher";
 import { NotificationCenter } from "../../notification/NotificationCenter";
+import { Option } from "../../profile/Option";
 
 export const Navbar = () => {
   return (
@@ -27,9 +27,7 @@ export const Navbar = () => {
         <Center />
         <LanSwitcher />
         <NotificationCenter />
-        <div className="content">
-          <Avatar />
-        </div>
+        <Option />
       </div>
     </nav>
   );

@@ -1,0 +1,18 @@
+.optionItem {
+  @apply text-sm relative w-full hover:bg-slate-200 p-1 rounded-sm;
+}
+.subList {
+  @apply hidden absolute top-2 w-56 bg-slate-100 rounded-sm shadow-md -right-[224px] p-2;
+}
+.optionItem:hover .subList {
+  display: block;
+}
+.controllerItem {
+  @apply flex flex-col w-full hover:bg-slate-200 rounded-md px-1 py-2;
+}
+.progress {
+  @apply mt-2 w-full h-2 rounded-lg bg-slate-300 flex justify-end overflow-hidden;
+}
+.dropdonw {
+  @apply absolute left-1 top-16 w-56 border-2 shadow-md;
+}

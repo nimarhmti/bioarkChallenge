@@ -1,0 +1,15 @@
+.dropdown {
+  @apply flex flex-col absolute justify-between h-96 left-1 top-full w-96 z-20;
+}
+
+.subitem {
+  @apply w-full flex border-b-2 items-center gap-x-3 p-3 hover:bg-gray-300 rounded-sm;
+}
+
+.menuHeader {
+  @apply bg-slate-100 w-full top-0 left-0 z-10 h-16 p-3 flex items-center justify-between text-sm border-b-2 cursor-auto;
+}
+
+.menuFooter {
+  @apply bg-slate-100 bottom-0 w-full  left-0 z-20 h-16  flex items-center justify-center  border-t-2 hover:text-blue-700;
+}

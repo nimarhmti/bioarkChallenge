@@ -1,28 +1,31 @@
 import { useState } from "react";
-
-interface lanModel {
-  id: number;
-  lan: string;
-  name: string;
-}
-const lanList: lanModel[] = [
-  { id: 0, lan: "Fa", name: "Farsi" },
-  { id: 1, lan: "En", name: "English" },
-];
+import { useClickOutside } from "../../hooks/useClickOutside";
+import "./style.css";
+import { lanList, lanModel } from "./lanSwitcher.utils";
 const useFilterLan = (id: number) => {
   return lanList.filter((ele) => ele.id !== id);
 };
 export const LanSwitcher = () => {
   const [currentLan, setCurrentLan] = useState<lanModel>(lanList[0]);
-
+  const [isShow, setIsShow] = useState<boolean>(false);
+  const openHandler = () => {
+    setIsShow((pre) => !pre);
+  };
+  const domNode = useClickOutside(() => {
+    setIsShow(false);
+  });
   return (
-    <div className="content relative w-6 text-center">
+    <div
+      className="content relative w-6 text-center"
+      ref={domNode}
+      onClick={openHandler}
+    >
       <p>{currentLan.lan}</p>
-      <ul className="w-36 text-lg bg-white absolute top-12 left-1 p-1 z-10 rounded-sm hidden">
+      <ul className={isShow ? "dropdown" : "hidden"}>
         {useFilterLan(currentLan.id).map((item) => (
           <li
             key={item.id}
-            className="dropDownItem flex items-center justify-between mt-1"
+            className="lanDropdownItem"
             onClick={() => setCurrentLan(item)}
           >
             <span>{item.lan}</span>

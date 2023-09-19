@@ -25,5 +25,24 @@
     "VERSION": "نسخه",
     "DAY": "",
     "PRE": ""
+  },
+  "PROFILE_OPTION": {
+    "PROFILE": "پروفایل",
+    "TEMPLATE": "قالب ها",
+    "SECURITY": "امنیت",
+    "VISUAL": "تور مجازی",
+    "INSURANCE": "بیمه",
+    "SETTING": "تنظیمات",
+    "EMAIL": "ایمیل",
+    "COUNT": "حساب",
+    "STORAGE": "فضای خالی",
+    "LOGOUT": "خروج",
+    "IMPROVEMENT": "پیشرو",
+    "MEETING": "جلسات",
+    "RESET_PASS": "ریست رمز",
+    "SLAMAT": "تنظیم ورورد به بیمه سلامت",
+    "MOSALAH": "تنظیم ورود بیمه نیرو های مسلح",
+    "TAMIN_EJTEMAEI": "تنظیم شماره همراه تامین اجتماعی",
+    "NOSKHE": "تنظیمات ارسال نسخه"
   }
 }
