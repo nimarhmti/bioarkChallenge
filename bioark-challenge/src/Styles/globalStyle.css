@@ -40,3 +40,7 @@ li {
 .dropDownItem {
   @apply mb-1 w-full text-gray-500 text-sm rounded-sm hover:bg-gray-200 p-2;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
