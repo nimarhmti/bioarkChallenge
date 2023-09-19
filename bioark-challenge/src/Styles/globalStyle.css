@@ -35,8 +35,8 @@ li {
   @apply h-full flex items-center hover:bg-dark-hover cursor-pointer px-1;
 }
 .dropDownList {
-  @apply absolute block w-72 shadow-md z-10  left-1 top-12 bg-white p-2 shadow-md rounded-sm mb-2;
+  @apply absolute block w-72  z-10  left-1 top-12 bg-white p-2 shadow-md rounded-sm mb-2;
 }
 .dropDownItem {
-  @apply mb-2 w-full text-gray-500 text-sm rounded-sm hover:bg-gray-200 p-2;
+  @apply mb-1 w-full text-gray-500 text-sm rounded-sm hover:bg-gray-200 p-2;
 }

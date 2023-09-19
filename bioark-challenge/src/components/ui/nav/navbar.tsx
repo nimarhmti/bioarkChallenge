@@ -1,16 +1,17 @@
-import React from "react";
 import { Avatar } from "../../../assets/icons/avatar/avatar";
-import { Notification } from "../../../assets/icons/general/Notification";
 import { LoginIcon } from "../../../assets/icons/login/LoginIcon";
-import { Logo } from "../../../assets/icons/brand/Logo";
 import { Center } from "../../center/center";
+import { Section } from "../../sectionSelect/section";
+import translate from "../../../assets/translate/translate.json";
+import { LanSwitcher } from "../../switcher/lanSwitcher";
+import { NotificationCenter } from "../../notification/NotificationCenter";
 
 export const Navbar = () => {
   return (
     <nav className="nav flex items-center justify-between">
       <div className="flex gap-x-2 items-center h-full">
         <a href="#" className="text-2xl text-white font-medium">
-          bioArk
+          bioArc
         </a>
         <div className="content">
           <LoginIcon />
@@ -18,16 +19,14 @@ export const Navbar = () => {
       </div>
       <div className="flex gap-x-2 items-center h-full">
         <div className="content ">
-          <button className="btn btn-primary ">مرکز پشتیبانی</button>
+          <button className="btn btn-success text-white ">
+            {translate.NAVBAR.OWNER}
+          </button>
         </div>
-        <div className="content ">
-          <button className="btn btn-primary ">مرکز پشتیبانی</button>
-        </div>
+        <Section />
         <Center />
-        <span className="content">Fa</span>
-        <div className="content">
-          <Notification />
-        </div>
+        <LanSwitcher />
+        <NotificationCenter />
         <div className="content">
           <Avatar />
         </div>
