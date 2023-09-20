@@ -43,15 +43,15 @@ export const tab: tabsItemModel[] = [
         title: "ویزیت ها",
       },
       {
-        id: "a5",
+        id: "a6",
         title: "ارجاعات",
       },
       {
-        id: "a5",
+        id: "a7",
         title: " سطل آشغال",
       },
       {
-        id: "a6",
+        id: "a8",
         title: " مجوز های خاص ",
       },
     ],
@@ -212,7 +212,7 @@ export const tab: tabsItemModel[] = [
     ],
   },
   {
-    id: "3",
+    id: "3s",
     title: "اعضا",
     submenu: [
       { id: "c1", title: "گاربران" },
@@ -257,12 +257,12 @@ export const tab: tabsItemModel[] = [
         submenu: [
           { id: "dd1", title: "مدیریت دارو ها" },
           { id: "dd2", title: "مدیریت کارخانه دارو" },
-          { id: "dd3", title: "مدیریت دسته دارو" },
+          { id: "ded3", title: "مدیریت دسته دارو" },
           { id: "dd4", title: "برند دارو" },
         ],
       },
       {
-        id: "d3",
+        id: "dims3",
         title: "GV",
         submenu: [
           {
@@ -316,8 +316,8 @@ export const tab: tabsItemModel[] = [
             submenu: [
               { id: "add13", title: "فرم/گرافی" },
               { id: "bdd13", title: " فیلد های فرم" },
-              { id: "cdd13", title: "نقاط گرافی" },
-              { id: "cdd13", title: " نشانه ها" },
+              { id: "ddd13", title: "نقاط گرافی" },
+              { id: "edd13", title: " نشانه ها" },
             ],
           },
           {
@@ -373,7 +373,7 @@ export const tab: tabsItemModel[] = [
         ],
       },
       {
-        id: "d3",
+        id: "d3err",
         title: "مدیریت شغل",
       },
       {
@@ -381,7 +381,7 @@ export const tab: tabsItemModel[] = [
         title: "آزمایش",
       },
       {
-        id: "d4",
+        id: "ds4",
         title: "آزمایش CD",
       },
       {
@@ -414,11 +414,11 @@ export const tab: tabsItemModel[] = [
         title: "بیماری ها",
       },
       {
-        id: "d3",
+        id: "d33",
         title: "خبر ها",
       },
       {
-        id: "d4",
+        id: "dm4",
         title: "پرسش و پاسخ های متداول",
       },
       {
@@ -561,11 +561,11 @@ export const tab: tabsItemModel[] = [
             title: "بهای بیمه",
           },
           {
-            id: "bf5",
+            id: "cf5",
             title: " آزمایش",
           },
           {
-            id: "bf5",
+            id: "df5",
             title: "یادآوری ",
           },
         ],
