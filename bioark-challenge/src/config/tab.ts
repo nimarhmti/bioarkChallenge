@@ -1,4 +1,9 @@
-export const tab = [
+export interface tabsItemModel {
+  id: string;
+  title: string;
+  submenu?: tabsItemModel[];
+}
+export const tab: tabsItemModel[] = [
   {
     id: "1",
     title: "پنل من",
@@ -284,44 +289,44 @@ export const tab = [
             id: "dd10",
             title: "ازمایش",
             submenu: [
-              { id: "add10", titile: "آزمایش" },
-              { id: "bdd10", titile: "فیلد های ازمایش " },
+              { id: "add10", title: "آزمایش" },
+              { id: "bdd10", title: "فیلد های ازمایش " },
             ],
           },
           {
             id: "dd11",
             title: "اسناد",
             submenu: [
-              { id: "add11", titile: "اسناد" },
-              { id: "bdd11", titile: " فیلد های اسناد" },
+              { id: "add11", title: "اسناد" },
+              { id: "bdd11", title: " فیلد های اسناد" },
             ],
           },
           {
             id: "dd12",
             title: "پرونده الکترونیک",
             submenu: [
-              { id: "add12", titile: "فرم/گرافی" },
-              { id: "bdd12", titile: " فیلد های فرم" },
-              { id: "cdd12", titile: "نقاط گرافی" },
+              { id: "add12", title: "فرم/گرافی" },
+              { id: "bdd12", title: " فیلد های فرم" },
+              { id: "cdd12", title: "نقاط گرافی" },
             ],
           },
           {
             id: "dd13",
             title: "معاینات بالینی",
             submenu: [
-              { id: "add13", titile: "فرم/گرافی" },
-              { id: "bdd13", titile: " فیلد های فرم" },
-              { id: "cdd13", titile: "نقاط گرافی" },
-              { id: "cdd13", titile: " نشانه ها" },
+              { id: "add13", title: "فرم/گرافی" },
+              { id: "bdd13", title: " فیلد های فرم" },
+              { id: "cdd13", title: "نقاط گرافی" },
+              { id: "cdd13", title: " نشانه ها" },
             ],
           },
           {
             id: "dd14",
             title: "عمل ",
             submenu: [
-              { id: "add14", titile: "فرم/گرافی" },
-              { id: "bdd14", titile: " فیلد های فرم" },
-              { id: "cdd14", titile: "نقاط گرافی" },
+              { id: "add14", title: "فرم/گرافی" },
+              { id: "bdd14", title: " فیلد های فرم" },
+              { id: "cdd14", title: "نقاط گرافی" },
             ],
           },
           {
@@ -332,27 +337,27 @@ export const tab = [
                 id: "add15",
                 title: "Deliver Services",
                 submenu: [
-                  { id: "aadd15", titile: "فرم/گرافی" },
-                  { id: "bbdd15", titile: " فیلد های فرم" },
-                  { id: "ccdd15", titile: "نقاط گرافی" },
+                  { id: "aadd15", title: "فرم/گرافی" },
+                  { id: "bbdd15", title: " فیلد های فرم" },
+                  { id: "ccdd15", title: "نقاط گرافی" },
                 ],
               },
               {
                 id: "bdd15",
                 title: "orderPair-clinic",
                 submenu: [
-                  { id: "eadd15", titile: "فرم/گرافی" },
-                  { id: "fbdd15", titile: " فیلد های فرم" },
-                  { id: "gcdd15", titile: "نقاط گرافی" },
+                  { id: "eadd15", title: "فرم/گرافی" },
+                  { id: "fbdd15", title: " فیلد های فرم" },
+                  { id: "gcdd15", title: "نقاط گرافی" },
                 ],
               },
               {
                 id: "cdd15",
                 title: "Order Interventoin",
                 submenu: [
-                  { id: "hadd15", titile: "فرم/گرافی" },
-                  { id: "ibdd15", titile: " فیلد های فرم" },
-                  { id: "jcdd15", titile: "نقاط گرافی" },
+                  { id: "hadd15", title: "فرم/گرافی" },
+                  { id: "ibdd15", title: " فیلد های فرم" },
+                  { id: "jcdd15", title: "نقاط گرافی" },
                 ],
               },
             ],
@@ -399,60 +404,60 @@ export const tab = [
   {
     id: "5",
     title: "صفحه اول",
-    submenue: [
+    submenu: [
       {
         id: "d1",
-        titile: "سالاید ها",
+        title: "سالاید ها",
       },
       {
         id: "d2",
-        titile: "بیماری ها",
+        title: "بیماری ها",
       },
       {
         id: "d3",
-        titile: "خبر ها",
+        title: "خبر ها",
       },
       {
         id: "d4",
-        titile: "پرسش و پاسخ های متداول",
+        title: "پرسش و پاسخ های متداول",
       },
       {
         id: "d5",
-        titile: "اعضای تیم",
+        title: "اعضای تیم",
       },
       {
         id: "d6",
-        titile: "مقالات",
+        title: "مقالات",
       },
       {
         id: "d7",
-        titile: "داستان کوتاه ",
+        title: "داستان کوتاه ",
       },
       {
         id: "d8",
-        titile: "سایر تظیمات",
+        title: "سایر تظیمات",
       },
       {
         id: "d9",
-        titile: "باز خورد های مشتریان",
+        title: "باز خورد های مشتریان",
       },
       {
         id: "d10",
-        titile: "گالری",
+        title: "گالری",
       },
       {
         id: "d11",
-        titile: "مشتریان",
+        title: "مشتریان",
       },
       {
         id: "d12",
-        titile: "گواهی نامه",
+        title: "گواهی نامه",
       },
     ],
   },
   {
     id: "6",
-    titlr: "مالی",
+    title: "مالی",
     submenu: [
       {
         id: "e1",
@@ -696,7 +701,7 @@ export const tab = [
       {
         id: "h4",
         title: "تنظیمات ویزیت",
-        submeu: [
+        submenu: [
           {
             id: "ah4",
             title: "مدیریت بایو مگ",

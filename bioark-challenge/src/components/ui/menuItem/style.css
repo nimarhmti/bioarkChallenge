@@ -1,0 +1,20 @@
+.menuItemSection {
+  @apply relative cursor-pointer;
+}
+
+.headerDropdown {
+  @apply bg-white shadow-md border-2 w-48 p-3 absolute right-0 top-8 hidden z-[1000];
+}
+.headerDropSide {
+  @apply bg-white shadow-md border-2 w-48 p-3 absolute right-20 top-2 hidden z-[1000];
+}
+
+.menuItemSection:hover .headerDropSide {
+  display: block;
+}
+.menuItemSection:hover .headerDropdown {
+  display: block;
+}
+.menuItemSection:active .headerDropdown {
+  display: block;
+}
