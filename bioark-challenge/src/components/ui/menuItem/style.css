@@ -2,9 +2,12 @@
   @apply relative cursor-pointer;
 }
 
+.mainStyle {
+  @apply bg-white shadow-md border-2 w-48  absolute hidden;
+}
 .headerDropdown {
-  @apply bg-white shadow-md border-2 w-48  absolute right-0 top-11 hidden;
+  @apply right-0 top-11;
 }
 .headerDropSide {
-  @apply bg-white shadow-md border-2 w-48  absolute right-[188px] top-5 hidden;
+  @apply right-[188px] top-5;
 }

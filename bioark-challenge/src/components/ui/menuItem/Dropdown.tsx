@@ -8,8 +8,10 @@ interface Props {
   itemHovered: string;
   id: string;
 }
+
 export const Dropdown = ({ depth, items, itemHovered, id }: Props) => {
-  const dropDonwClass = depth > 0 ? "headerDropSide" : "headerDropdown";
+  const dropDonwClass =
+    depth > 0 ? "mainStyle headerDropSide" : "mainStyle headerDropdown";
   const isHovered = itemHovered == id;
   depth = depth + 1;
   return (
