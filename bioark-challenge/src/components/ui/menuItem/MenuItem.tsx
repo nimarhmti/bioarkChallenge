@@ -22,7 +22,7 @@ export const MenuItem = ({ depth, items, id }: Props) => {
     >
       {items.title}
       {depth > 0 && items.submenu ? (
-        <span className="absolute left-0">+</span>
+        <span className="absolute left-2">+</span>
       ) : null}
       {items.submenu && (
         <Dropdown
